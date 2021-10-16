@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+.app-area {
+  margin: 100px auto;
+  width: 425px;
+  height: 660px;
+  background-color: hsl(225, 100%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px hsl(224, 23%, 55%);
+}
+
+.top-area {
+  overflow: hidden;
+}
+
+.top-area img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.mid-area {
+  text-align: center;
+  line-height: 1;
+}
+
+.mid-area h1 {
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.mid-area p {
+  color: hsl(224, 23%, 55%);
+  margin: 10px 0;
+}
+
+.container {
+  background-color: hsl(225, 100%, 98%);
+  height: 100px;
+  width: 350px;
+  border-radius: 15px;
+  margin: 25px auto 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plan {
+  display: inline-block;
+  padding-right: 100px;
+}
+
+.plan h2 {
+  margin: 5px auto;
+  font-size: 16px;
+}
+
+.plan p {
+  margin: 5px auto;
+  color: hsl(224, 23%, 55%);
+}
+
+.container img {
+  width: 12%;
+  padding-left: 10px;
+}
+
+.container a {
+  padding-right: 10px;
+
+}
+
+.container a:hover {
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+}
+
+.btn-section {
+  text-align: center;
+}
+
+.pay-btn {
+  display: inline-block;
+  margin: 40px 0 20px;
+  width: 80%;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+}
+
+.pay-btn:hover {
+  background-color: hsl(245, 75%, 70%);
+}
+
+.cancel-btn {
+  border: none;
+  background-color: hsl(225, 100%, 100%);
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-image: url('../images/pattern-background-mobile.svg');
+    font-size: 14px;
+  }
+
+  .app-area {
+    width: 85%;
+    height: 550px;
+  }
+
+  .container {
+    width: 85%;
+    height: 12%;
+    justify-content: space-between;
+  }
+
+  .container img {
+    width: 17%;
+    padding: 0 5px 0 10px;
+  }
+
+  .plan {
+    padding-right: 10px;
+  }
+
+  .plan h2 {
+    width: 100px;
+  }
+
+}
